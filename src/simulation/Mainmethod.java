@@ -16,7 +16,7 @@ public class Mainmethod {
 	public static int[] track_laps = {5, 4, 3, 2, 1};
 	static int time_limit = 250;
 	static int winner = 1;
-	int t = (track_distance * track_laps);
+	static int t = (track_distance * track_laps);
 	
 	//gets track with it's distance and turn amount with time limit. Also states overall distance
 	
@@ -34,6 +34,7 @@ public class Mainmethod {
 		System.out.println("This is how many turns the track has: " + track_laps);
 		
 		System.out.println("This is the distance of every lap in the track: " + track_distance);
+		System.out.println("Your car must go this many miles overall: " + t);
 		System.out.println("-----------------------");
 		System.out.println("This is the data on the car");
 		System.out.println("This is the car you are using: " + car_type);
@@ -51,9 +52,10 @@ public class Mainmethod {
 		
 		System.out.println("There can be this many winners: " + winner);
 		System.out.println("------------------------------");
+		
 		//States how you are going to win, if you can
 		
-		System.out.println("This is the ammount of miles overall you have to go though: " + t);
+		
 		System.out.println("This is the ammount of hours it is going to take to finish the race: " + t / topspeed);
 		System.out.println("This is the rate of loss of this car: " + miles_until_empty / topspeed);
 		System.out.println("This is how fast it is going to take to empty the car: " + topspeed / miles_until_empty);
