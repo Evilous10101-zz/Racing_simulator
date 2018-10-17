@@ -6,7 +6,7 @@ public class Mainmethod {
 	//creates types of cars
 	static int[] topspeed = {70, 100, 200, 250};
 	static int[] fuel_tank_amount = {300, 200, 250, 350};
-	static int[] mpg_amount = miles_until_empty / fuel_tank_amount;
+	static int[] mpg_amount = (miles_until_empty / fuel_tank_amount);
 	static int[] miles_until_empty = {100, 50, 75, 125};
 	//Creates data on the track
 	public static int[] track_distance = {100, 90, 80, 70, 60, 50};
@@ -59,7 +59,7 @@ public class Mainmethod {
 		System.out.println("This is the ammount of hours it is going to take to finish the race: " + t / topspeed);
 		System.out.println("This is the rate of loss of this car: " + miles_until_empty / topspeed);
 		System.out.println("This is how fast it is going to take to empty the car: " + topspeed / miles_until_empty);
-		if(mpg_amount + topspeed > fuel_tank_amount)
+		if(mpg_amount < topspeed * t)
 		{
 			System.out.println("You have to stop and get gas");
 			//adds time to time limit
