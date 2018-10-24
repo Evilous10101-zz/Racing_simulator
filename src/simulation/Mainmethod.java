@@ -29,7 +29,7 @@ public class Mainmethod {
 	
 	
 	
-	int mpg_amount = miles_until_empty / fuel_tank_amount;
+	  //find mpg ammount
 	
 	static int[] miles_until_empty = {100, 50, 75, 125};
 	private Random randki = new Random();
@@ -61,11 +61,12 @@ public class Mainmethod {
 	public int randomiol(){
         return track_laps[randkilo.nextInt(track_laps.length)];
     }
+	static int mpg_amount = miles_until_empty / fuel_tank_amount;
 	
-	
+	static int t = (track_distance * track_laps);
 	static int time_limit = 250;
 	static int winner = 1;
-	static int t = (track_distance * track_laps);
+	 //finds t
 	
 	//gets track with it's distance and turn amount with time limit. Also states overall distance
 	
@@ -83,12 +84,12 @@ public class Mainmethod {
 		System.out.println("This is how many turns the track has: " + track_laps);
 		
 		System.out.println("This is the distance of every lap in the track: " + track_distance);
-		System.out.println("Your car must go this many miles overall: " + t);
+		System.out.println("Your car must go this many miles overall: " + t); //miles overall
 		System.out.println("-----------------------");
 		System.out.println("This is the data on the car");
 		System.out.println("This is the car you are using: " + car_type);
 		
-		System.out.println("This is the mpg of your car: "+  mpg_amount);
+		System.out.println("This is the mpg of your car: "+  mpg_amount); //tell mpg_amount here
 		
 		System.out.println("This is the fuel tank amount you start with: " + fuel_tank_amount);
 		
@@ -104,7 +105,7 @@ public class Mainmethod {
 		
 		//States how you are going to win, if you can
 		
-		
+		//big code
 		System.out.println("This is the ammount of hours it is going to take to finish the race: " + t / topspeed);
 		System.out.println("This is the rate of loss of this car: " + miles_until_empty / topspeed);
 		System.out.println("This is how fast it is going to take to empty the car: " + topspeed / miles_until_empty);

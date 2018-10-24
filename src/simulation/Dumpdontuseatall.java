@@ -20,5 +20,20 @@ public class Dumpdontuseatall {
 	
 	
 	
+	static int t = (track_distance * track_laps);
+	
+	int mpg_amount = miles_until_empty / fuel_tank_amount;
+	
+	System.out.println("Your car must go this many miles overall: " + t);
+	
+	System.out.println("This is the mpg of your car: "+  mpg_amount);
+	
+	
+	
+	System.out.println("This is the ammount of hours it is going to take to finish the race: " + t / topspeed);
+	System.out.println("This is the rate of loss of this car: " + miles_until_empty / topspeed);
+	System.out.println("This is how fast it is going to take to empty the car: " + topspeed / miles_until_empty);
+	if(mpg_amount < topspeed * t)
+	
     }
 
