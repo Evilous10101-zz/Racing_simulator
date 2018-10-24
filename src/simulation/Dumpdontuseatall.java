@@ -1,5 +1,7 @@
 package simulation;
 
+import java.util.Random;
+
 public class Dumpdontuseatall {
 	//This is code that I am saving just in case it is needed
 	static Track distance = new Track();
@@ -15,4 +17,8 @@ public class Dumpdontuseatall {
 	private static final int buick = 0;
 	private static final int hybrid = 0;
 	private static final int sedan = 0;
-}
+	
+	
+	
+    }
+
